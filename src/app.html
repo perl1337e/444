@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="ru" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      try {
+        var s = JSON.parse(localStorage.getItem('settings') || '{}');
+        if (s.theme) document.documentElement.dataset.theme = s.theme;
+      } catch (e) {}
+    </script>
+    %sveltekit.head%
+  </head>
+  <body>%sveltekit.body%</body>
+</html>
